@@ -1,2 +1,14 @@
 <?php
-phpinfo();
+?>
+<html>
+<head>
+    <style>
+        {{CSS}}
+    </style>
+</head>
+<body>
+</body>
+<script>
+    {{JS}}
+</script>
+</html>

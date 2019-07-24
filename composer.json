@@ -1,0 +1,6 @@
+{
+    "require": {
+        "nodejs-php-fallback/uglify": "^1.0",
+        "voku/html-min": "^3.1"
+    }
+}

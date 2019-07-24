@@ -1,0 +1,353 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e11eafff2dcee5a05e594ddf637d6e09",
+    "packages": [
+        {
+            "name": "gkralik/php-uglifyjs",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gkralik/php-uglifyjs.git",
+                "reference": "c76667a3adaed9efd54ef5ba90576308ed88c291"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gkralik/php-uglifyjs/zipball/c76667a3adaed9efd54ef5ba90576308ed88c291",
+                "reference": "c76667a3adaed9efd54ef5ba90576308ed88c291",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GK\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL 2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Gregor Kralik",
+                    "email": "g.kralik@gmail.com"
+                }
+            ],
+            "description": "PHP Javascript packer",
+            "time": "2015-10-10T12:58:30+00:00"
+        },
+        {
+            "name": "natxet/cssmin",
+            "version": "v3.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/natxet/CssMin.git",
+                "reference": "d5d9f4c3e5cedb1ae96a95a21731f8790e38f1dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/natxet/CssMin/zipball/d5d9f4c3e5cedb1ae96a95a21731f8790e38f1dd",
+                "reference": "d5d9f4c3e5cedb1ae96a95a21731f8790e38f1dd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Scylla",
+                    "email": "joe.scylla@gmail.com",
+                    "homepage": "https://profiles.google.com/joe.scylla"
+                }
+            ],
+            "description": "Minifying CSS",
+            "homepage": "http://code.google.com/p/cssmin/",
+            "keywords": [
+                "css",
+                "minify"
+            ],
+            "time": "2018-01-09T11:15:01+00:00"
+        },
+        {
+            "name": "nodejs-php-fallback/nodejs-php-fallback",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kylekatarnls/nodejs-php-fallback.git",
+                "reference": "06d5e4f0694cc6612bd25c8996441e6efd7ab766"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kylekatarnls/nodejs-php-fallback/zipball/06d5e4f0694cc6612bd25c8996441e6efd7ab766",
+                "reference": "06d5e4f0694cc6612bd25c8996441e6efd7ab766",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "composer/composer": "^1.2",
+                "phpunit/phpunit": ">=4.8.35 <6.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "NodejsPhpFallback\\ComposerPlugin"
+            },
+            "autoload": {
+                "psr-0": {
+                    "NodejsPhpFallback\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle",
+                    "email": "kylekatarnls@gmail.com"
+                }
+            ],
+            "description": "Allow you to call node.js module or scripts throught PHP and call a fallback function if node.js is not available",
+            "time": "2018-04-05T14:25:31+00:00"
+        },
+        {
+            "name": "nodejs-php-fallback/uglify",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kylekatarnls/uglify.git",
+                "reference": "b3572042b6710173f8a3378b8b5c76f8ecdc74a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kylekatarnls/uglify/zipball/b3572042b6710173f8a3378b8b5c76f8ecdc74a8",
+                "reference": "b3572042b6710173f8a3378b8b5c76f8ecdc74a8",
+                "shasum": ""
+            },
+            "require": {
+                "gkralik/php-uglifyjs": "*",
+                "natxet/cssmin": "*",
+                "nodejs-php-fallback/nodejs-php-fallback": "^1.2.3"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "composer/composer": "^1.2",
+                "phpunit/phpunit": ">=4.8 <6.0"
+            },
+            "type": "library",
+            "extra": {
+                "npm": [
+                    "uglify-js",
+                    "clean-css"
+                ]
+            },
+            "autoload": {
+                "psr-0": {
+                    "NodejsPhpFallback\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle",
+                    "email": "kylekatarnls@gmail.com"
+                }
+            ],
+            "description": "PHP wrapper to execute uglify-js/clean-css node package or fallback to PHP alternatives",
+            "time": "2019-01-16T14:47:09+00:00"
+        },
+        {
+            "name": "symfony/css-selector",
+            "version": "v4.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/css-selector.git",
+                "reference": "105c98bb0c5d8635bea056135304bd8edcc42b4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/105c98bb0c5d8635bea056135304bd8edcc42b4d",
+                "reference": "105c98bb0c5d8635bea056135304bd8edcc42b4d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\CssSelector\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jean-François Simon",
+                    "email": "jeanfrancois.simon@sensiolabs.com"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony CssSelector Component",
+            "homepage": "https://symfony.com",
+            "time": "2019-01-16T21:53:39+00:00"
+        },
+        {
+            "name": "voku/html-min",
+            "version": "3.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voku/HtmlMin.git",
+                "reference": "62a1f2af5e317b2f118bf2d63194e8462db38af2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voku/HtmlMin/zipball/62a1f2af5e317b2f118bf2d63194e8462db38af2",
+                "reference": "62a1f2af5e317b2f118bf2d63194e8462db38af2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "php": ">=7.0.0",
+                "voku/simple_html_dom": "~4.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0 || ~7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "voku\\": "src/voku/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Moelleken",
+                    "homepage": "http://www.moelleken.org/"
+                }
+            ],
+            "description": "HTML Compressor and Minifier",
+            "homepage": "https://github.com/voku/HtmlMin",
+            "keywords": [
+                "compress",
+                "compression",
+                "compressor",
+                "html",
+                "minifier"
+            ],
+            "time": "2019-06-19T11:19:09+00:00"
+        },
+        {
+            "name": "voku/simple_html_dom",
+            "version": "4.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voku/simple_html_dom.git",
+                "reference": "afc52b7ab6646744b370d3d45bbc5d622829c02f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voku/simple_html_dom/zipball/afc52b7ab6646744b370d3d45bbc5d622829c02f",
+                "reference": "afc52b7ab6646744b370d3d45bbc5d622829c02f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "ext-simplexml": "*",
+                "php": ">=7.0.0",
+                "symfony/css-selector": "~3.0|~4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0 || ~7.0"
+            },
+            "suggest": {
+                "voku/portable-utf8": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "voku\\helper\\": "src/voku/helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Moelleken",
+                    "homepage": "http://www.moelleken.org/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "dimabdc",
+                    "email": "support@titor.ru",
+                    "homepage": "http://github.com/dimabdc",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple HTML DOM package.",
+            "homepage": "http://simplehtmldom.sourceforge.net/",
+            "keywords": [
+                "HTML Parser",
+                "dom",
+                "php dom"
+            ],
+            "time": "2019-07-19T00:06:42+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
